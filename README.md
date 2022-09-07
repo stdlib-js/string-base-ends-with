@@ -30,38 +30,30 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/string-base-ends-with
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-endsWith = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-ends-with@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var endsWith = require( 'path/to/vendor/umd/string-base-ends-with/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-base-ends-with@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.endsWith;
-})();
-</script>
+var endsWith = require( '@stdlib/string-base-ends-with' );
 ```
 
 #### endsWith( str, search, len )
@@ -78,7 +70,7 @@ bool = endsWith( str, 'Boy?', str.length );
 // returns false
 ```
 
-To search for a match at the end of a substring, provide a `len` argument. If `len` is positive, the function restricts the search to a substring with length `len`, beginning with the leftmost character. If `len` is negative, `len` indicates to ignore the last `len` characters (equivalent to `str.length + len`).
+To search from a specific character position, provide a `len` argument. If `len` is positive, the function restricts the search to a substring with length `len`, beginning with the leftmost character. If `len` is negative, `len` indicates to ignore the last `len` characters (equivalent to `str.length + len`).
 
 ```javascript
 var str = 'To be, or not to be, that is the question.';
@@ -114,6 +106,12 @@ var bool = endsWith( str, '' );
     // returns 2
     ```
 
+-   This function differs from [`String.prototype.endsWith`][mdn-string-endswith] in the following ways:
+
+    -   The function assumes string values for the first and second arguments and assumes that the `len` argument is an integer value.
+    -   The function does **not** clamp positive `len` values to the end of the input string.
+    -   Except when provided an empty `search` string, the function **always** returns `false` is a `len` resolves to a starting search position which exceeds the bounds of the input string.
+
 </section>
 
 <!-- /.notes -->
@@ -124,13 +122,8 @@ var bool = endsWith( str, '' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-base-ends-with@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var endsWith = require( '@stdlib/string-base-ends-with' );
 
 var str = 'Fair is foul, and foul is fair, hover through fog and filthy air';
 
@@ -145,11 +138,6 @@ bool = endsWith( str, 'fair', 30 );
 
 bool = endsWith( str, 'fair', -34 );
 // returns true
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -232,6 +220,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/string-base-ends-with/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/string-base-ends-with/main/LICENSE
+
+[mdn-string-endswith]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith
 
 </section>
 
