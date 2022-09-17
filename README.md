@@ -37,7 +37,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import endsWith from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-ends-with@deno/mod.js';
+import endsWith from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-ends-with@v0.0.2-deno/mod.js';
 ```
 
 #### endsWith( str, search, len )
@@ -107,7 +107,7 @@ var bool = endsWith( str, '' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import endsWith from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-ends-with@deno/mod.js';
+import endsWith from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-ends-with@v0.0.2-deno/mod.js';
 
 var str = 'Fair is foul, and foul is fair, hover through fog and filthy air';
 
