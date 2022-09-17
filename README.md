@@ -37,6 +37,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import endsWith from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-ends-with@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/string-base-ends-with/tags). For example,
+
+```javascript
 import endsWith from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-ends-with@v0.0.2-esm/index.mjs';
 ```
 
@@ -112,7 +117,7 @@ var bool = endsWith( str, '' );
 <body>
 <script type="module">
 
-import endsWith from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-ends-with@v0.0.2-esm/index.mjs';
+import endsWith from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-ends-with@esm/index.mjs';
 
 var str = 'Fair is foul, and foul is fair, hover through fog and filthy air';
 
