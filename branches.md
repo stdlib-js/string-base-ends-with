@@ -38,12 +38,12 @@ C -->|bundle| D[esm];
 C -->|bundle| E[deno];
 C -->|bundle| F[umd];
 
-click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/ends-with"
-click B href "https://github.com/stdlib-js/string-base-ends-with/tree/main"
-click C href "https://github.com/stdlib-js/string-base-ends-with/tree/production"
-click D href "https://github.com/stdlib-js/string-base-ends-with/tree/esm"
-click E href "https://github.com/stdlib-js/string-base-ends-with/tree/deno"
-click F href "https://github.com/stdlib-js/string-base-ends-with/tree/umd"
+%% click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/ends-with"
+%% click B href "https://github.com/stdlib-js/string-base-ends-with/tree/main"
+%% click C href "https://github.com/stdlib-js/string-base-ends-with/tree/production"
+%% click D href "https://github.com/stdlib-js/string-base-ends-with/tree/esm"
+%% click E href "https://github.com/stdlib-js/string-base-ends-with/tree/deno"
+%% click F href "https://github.com/stdlib-js/string-base-ends-with/tree/umd"
 ```
 
 [stdlib-url]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/string/base/ends-with
