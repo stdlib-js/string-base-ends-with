@@ -161,6 +161,12 @@ bool = endsWith( str, 'fair', -34 );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/string-base/starts-with`][@stdlib/string/base/starts-with]</span><span class="delimiter">: </span><span class="description">test if a string starts with the characters of another string.</span>
+
 </section>
 
 <!-- /.related -->
@@ -238,6 +244,12 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/string-base-ends-with/main/LICENSE
 
 [mdn-string-endswith]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith
+
+<!-- <related-links> -->
+
+[@stdlib/string/base/starts-with]: https://github.com/stdlib-js/string-base-starts-with
+
+<!-- </related-links> -->
 
 </section>
 
